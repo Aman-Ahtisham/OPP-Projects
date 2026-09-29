@@ -1,0 +1,48 @@
+class Marks {
+    double mark1;
+    double mark2;
+    double mark3;
+
+    public Marks() {
+        this.mark1 = 0;
+        this.mark2 = 0;
+        this.mark3 = 0;
+    }
+
+    public Marks(double mark1, double mark2, double mark3) {
+        this.mark1 = mark1;
+        this.mark2 = mark2;
+        this.mark3 = mark3;
+    }
+    public double calculateSum() {
+        return mark1 + mark2 + mark3;
+    }
+    public double getMark1() {
+        return mark1;
+    }
+    public void setMark1(double mark1) {
+        this.mark1 = mark1;
+    }
+    public double getMark2() {
+        return mark2;
+    }
+    public void setMark2(double mark2) {
+        this.mark2 = mark2;
+    }
+    public double getMark3() {
+        return mark3;
+    }
+    public void setMark3(double mark3) {
+        this.mark3 = mark3;
+    }
+    public static void main(String[] args) {
+        Marks student1 = new Marks();
+        student1.setMark1(85);
+        student1.setMark2(90);
+        student1.setMark3(78);
+        System.out.println("Total Marks for Student 1: " + student1.calculateSum());
+
+        Marks student2 = new Marks(88.5, 92.0, 95.5);
+        System.out.println("Total Marks for Student 2: " + student2.calculateSum());
+    }
+}
