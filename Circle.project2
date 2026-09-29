@@ -1,0 +1,27 @@
+class Circle{
+    double radius;
+    public Circle(){
+        this.radius=3;
+    }
+    public Circle(double radius){
+        this.radius=radius;
+    }
+    public double calculateCircumference(){
+        return 2*Math.PI*radius;
+    }
+    public double getRadius(){
+        return radius;
+    }
+    public void setRadius(double radius){
+        this.radius=radius;
+    }
+    public static void main(String[] args){
+        Circle c1 = new Circle();
+        c1.setRadius(6);
+        System.out.println("Circle Radius:"+c1.getRadius());
+        System.out.println("Circumference of circle 1 is:"+c1.calculateCircumference());
+        Circle c2 = new Circle();
+        System.out.println("Circle Radius:"+c2.getRadius());
+        System.out.println("Circumference of circle 2 is:"+c1.calculateCircumference());
+    }
+}
