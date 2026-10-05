@@ -1,0 +1,33 @@
+class Employee{
+    int EmployeeId;
+    String EmployeeName;
+    public void setEmployeeId(int EmployeeId){
+        this.EmployeeId= EmployeeId;
+    }
+    public int getEmployeeId(){
+        return EmployeeId;
+    }
+    public void setEmployeeName(String EmployeeName){
+        this.EmployeeName= EmployeeName;
+
+    }
+    public String getEmployeeName(){
+        return EmployeeName;
+    }
+    public void setEmployeeData(int Id,String Name){
+        setEmployeeId(Id);
+        setEmployeeName(Name);
+    }
+    public void showDesignation(String Designation){
+        System.out.println("Employee Id is:"+getEmployeeId());
+        System.out.println("Employee Name is:"+getEmployeeName());
+        System.out.println("Employee Designation  is:"+Designation);
+    }
+}
+public class Main{
+
+public static void main(String[]args){
+    Employee emp=new Employee();
+    emp.setEmployeeData(101,"Aman");
+    emp.showDesignation("Data Science");
+}}
